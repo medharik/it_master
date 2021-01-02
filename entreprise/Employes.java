@@ -1,9 +1,20 @@
 package entreprise;
 
-public class Employes {
+public  class Employes {
 	private String nom;
-	
+	protected  static String natioannalite;
+	public    final  static  int  TVA=20;
 	public Employes() {
+		
+	}
+
+	public  static String getNatioannalite() {
+		
+		return natioannalite;
+	}
+
+	public static void setNatioannalite(String natioannalite) {
+		Employes.natioannalite = natioannalite;
 	}
 
 	public Employes(String nom) {
@@ -17,7 +28,7 @@ public class Employes {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public void afficher(){
+	public  void afficher(){
 		System.out.println("===================================");
 		System.out.println("Nom est "+nom);
 	}
